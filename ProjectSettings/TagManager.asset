@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - SoftStar
   - Item
+  - GameOver
   layers:
   - Default
   - TransparentFX
