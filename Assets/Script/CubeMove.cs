@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+//using System.Threading.Tasks;
+//using System.Threading;
+
 
 public class CubeMove : MonoBehaviour
 {
@@ -35,7 +39,19 @@ public class CubeMove : MonoBehaviour
         {
             
             gameOverText.text = "YOU DIED";
+            print("YOU DIED");
+            //static async void DelaySample()
+            //{
+            //    await Task.Delay(5000);
+            //}
+            //Thread.Sleep(1000);
+            Invoke("Scene", 3f);
+
         }
     }
 
+    private void Scene()
+    {
+        SceneManager.LoadScene("Game");
+    }
 }
