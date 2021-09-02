@@ -7,8 +7,15 @@ public class TimerController : MonoBehaviour
 {
 	public Text timerText;
 
-	public float totalTime;
+	public static float totalTime;
 	int seconds;
+
+
+	public static float gettime()
+    {
+		return totalTime;
+    }
+
 
 	// Use this for initialization
 	void Start()
@@ -24,4 +31,6 @@ public class TimerController : MonoBehaviour
 		timerText.text = seconds.ToString();
 
 	}
+
+	
 }

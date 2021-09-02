@@ -12,6 +12,17 @@ public class CubeMove : MonoBehaviour
 
     public Text gameOverText;
 
+    //float totalTime;
+
+
+    //void Start()
+    //{
+    //    totalTime = TimerController.gettime();
+
+
+    //}
+
+
     void Update()
     {
     //    if (Input.GetKey(KeyCode.LeftArrow))
@@ -40,6 +51,8 @@ public class CubeMove : MonoBehaviour
             
             gameOverText.text = "YOU DIED";
             print("YOU DIED");
+            
+
             //static async void DelaySample()
             //{
             //    await Task.Delay(5000);
@@ -52,6 +65,7 @@ public class CubeMove : MonoBehaviour
 
     private void Scene()
     {
+        //totalTime = 0;
         SceneManager.LoadScene("Game");
     }
 }

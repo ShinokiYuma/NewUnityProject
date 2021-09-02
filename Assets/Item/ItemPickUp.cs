@@ -8,8 +8,14 @@ using TMPro;
 
 public class ItemPickUp : MonoBehaviour
 {
-    public int count;
+    public static int count;
     public TextMeshProUGUI countText;
+
+    public static int getitem()
+    {
+        return count;
+    }
+
 
     void Start()
     {
